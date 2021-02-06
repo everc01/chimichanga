@@ -1,0 +1,41 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+.header{
+    width: 100vw;
+    background-color:khaki;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: 'Meera Inimai', sans-serif; 
+
+}
+
+.nav ,.nav-items {
+    list-style: none;
+display: inline-flex;
+flex-wrap: wrap;
+padding: 5px;
+  
+}
+.nav .nav-items li{
+    padding: 5px;
+}
+
+.nav .nav-items li a:hover{
+background-color: goldenrod;
+   box-shadow: 0 0 10px goldenrod;
+   border-radius: 3px;   
+}
+.nav .nav-items li a:active{
+    color: crimson;
+}
+
+.nav .nav-items li a{
+text-decoration: none;
+color: black;
+
+}
