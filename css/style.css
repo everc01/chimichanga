@@ -25,11 +25,7 @@ padding: 5px;
     padding: 5px;
 }
 
-.nav .nav-items li a:hover{
-background-color: goldenrod;
-   box-shadow: 0 0 10px goldenrod;
-   border-radius: 3px;   
-}
+
 .nav .nav-items li a:active{
     color: crimson;
 }
@@ -37,5 +33,18 @@ background-color: goldenrod;
 .nav .nav-items li a{
 text-decoration: none;
 color: black;
-
+font-weight: lighter;
+font-size: 20px;
+}
+.cool-link::after{
+    content: '';
+    display:block;
+    width: 0;
+    height: 2px;
+    background:black;
+    transition: width .3s;
+}
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .3s;
 }
